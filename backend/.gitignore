@@ -1,0 +1,14 @@
+
+
+staticfiles
+private_media/
+venv
+
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+.env
+.env.local
+.env.production

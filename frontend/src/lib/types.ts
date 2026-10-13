@@ -1,0 +1,51 @@
+import { User } from "@/services/userService";
+
+export type ListResponse<T> = {
+  count: number;
+  next: string | null;
+  previous: string | null;
+  results: T[];
+};
+
+export type Course = {
+  id: number;
+  title: string;
+  description: string;
+  teacher: User;
+  created_at: string;
+  updated_at: string;
+  published_at: string;
+  enrollment_count: number;
+  total_enrollments: number;
+  is_enrolled: boolean;
+  can_enroll: boolean;
+  course_chat_id?: number; // ID of the course chat if it exists
+};
+
+export type File = {
+  id: number;
+  original_name: string;
+  is_previewable: boolean;
+  download_url?: string;
+  file_content?: string;
+};
+
+export type CourseLesson = {
+  id: number;
+  title: string;
+  description: string;
+  content?: string;
+  file?: File;
+  published_at?: string;
+  created_at: string;
+  updated_at: string;
+};
+
+export type Enrollment = {
+  id: number;
+  course: Course;
+  user: User;
+  is_active: boolean;
+  enrolled_at: string;
+  unenrolled_at: string | null;
+};

@@ -1,0 +1,69 @@
+# Static collection directory (DON'T commit this)
+static
+# Media uploads
+media/
+# Python bytecode
+__pycache__
+*.py[cod]
+# Environment files
+.env
+*.sqlite3
+# VSCode or PyCharm config
+.vscode/
+.idea/
+
+#virtual env
+env
+finalterm_env
+
+output_file.txt
+
+
+
+staticfiles/
+private_media/
+venv
+
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+.env
+.env.local
+.env.production
+
+
+ 
+# Node.js / Next.js
+node_modules/
+.next/
+out/
+dist/
+build/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Python virtual environments
+.venv/
+venv/
+env/
+finalterm_env/
+
+# Environment variables
+.env*
+!.env.example
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Local database files
+*.sqlite3
+
+# Test and coverage files
+.pytest_cache/
+.coverage
+htmlcov/
+
